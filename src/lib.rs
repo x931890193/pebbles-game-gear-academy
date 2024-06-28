@@ -25,13 +25,13 @@ pub fn get_pebbles_difficulty() -> Option<DifficultyLevel> {
 
 pub fn get_pebbles_count() -> Option<u32> {
     unsafe {
-        PEBBLES_INIT.as_ref().map(|init| init.pebbles_count.clone())
+        PEBBLES_INIT.as_ref().map(|init| init.pebbles_count)
     }
 }
 
 pub fn get_max_pebbles_per_turn() -> Option<u32> {
     unsafe {
-        PEBBLES_INIT.as_ref().map(|init| init.max_pebbles_per_turn.clone())
+        PEBBLES_INIT.as_ref().map(|init| init.max_pebbles_per_turn)
     }
 }
 
